@@ -74,10 +74,10 @@ def usage():
     print('\n')
 
 if __name__ == '__main__':
-    s = "".join([str(random.randint(0, 9)) for _ in range(10)])
-    c = "5109469095"
-    u = argv[1]
-    p = argv[2]
+    s = argv[0]
+    c = argv[1]
+    u = argv[2]
+    p = argv[3]
     try:
         a = spoofPhone(s, c, u, p)
     except:
